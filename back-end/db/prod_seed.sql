@@ -1,8 +1,12 @@
 INSERT INTO snowboard (category, name, img, description, price, rating, featured) VALUES
-('Snowboard', 'Salomon Bellevue', 'https://images.evo.com/imgp/250/207264/904374/clone.jpg', 'The Salomon Bellevue Splitboard is engineered for the adventurous rider seeking a light but capable setup for journeys into the wilderness white room.', 799, 3, false),
-('Snowboard', 'Jones Dream Catcher', 'https://images.evo.com/imgp/250/206659/818794/jones-dream-catcher-snowboard-women-s-2022-.jpg', 'In a world of increasing specialization, it is nice to get a simple one-step solution every now and then. If you are looking for a good time on the mountain.', 599, 5, true);
-
-
+('Snowboards', 'Salomon Bellevue', 'https://images.evo.com/imgp/250/207264/904374/clone.jpg', 'The Salomon Bellevue Splitboard is engineered for the adventurous rider seeking a light but capable setup for journeys into the wilderness white room.', 799, 3, false),
+('Snowboards', 'Jones Dream Catcher', 'https://images.evo.com/imgp/250/206659/818794/jones-dream-catcher-snowboard-women-s-2022-.jpg', 'In a world of increasing specialization, it is nice to get a simple one-step solution every now and then. If you are looking for a good time on the mountain.', 599, 5, true),
+('Boots', 'DC Control Boa', 'https://images.evo.com/imgp/250/197191/830225/dc-control-boa-snowboard-boots-2022-.jpg', 'Perhaps the most versatile boot in the DC lineup, the DC Control Boa Snowboard Boots are the ultimate top-to-bottom performer. Their medium flex has just enough support to sustain high speed lines and pow', 229, 4, false),
+('Boots', 'DC Mutiny Snowboard', '	https://images.evo.com/imgp/250/197195/830298/dc-mutiny-snowboard-boots-2022-.jpg', 'Re-designed this season, the freestyle-favorite DC Mutiny Snowboard Boots double down on their skate shoe made for snowboarding accolades. A favorite of park purists', 189, 0, false),
+('Helmets', 'Smith Vantage MIPS', '	https://images.evo.com/imgp/250/119024/712990/smith-vantage-mips-helmet-women-s-.jpg', 'Get a competitive advantage over the competition when riding with the Smith Vantage MIPS Helmet. Built expertly tough, it is hybrid SL shell and Aerocore™ construction features top-notch temperature regulation and enhances impact resistance', 270, 4, true),
+('Helmets', 'Sandbox Icon Snow', 'https://images.evo.com/imgp/250/204288/866159/sandbox-icon-snow-helmet-.jpg', 'The same stylish design and bomber construction that you have grown to expect from Sandbox helmets but without the classic visor look, the Sandbox Icon Snow Helmet offers a more sleek and timeless silhouette.', 114, 2, false),
+('Goggles', 'Oakley Line Miner XM', '', 'Not everyone fits the massive goggles of today, so Oakley came around with the XM (extra-medium) Line Miner Goggle for the smaller faces out there. The original Line Miner has one of the largest peripheral views on the market, and the Oakley Line Miner XM Goggles are no exception to this top-of-the-line construction.', 164, 5, true),
+('Goggles', 'Von Zipper Jetpack', 'https://images.evo.com/imgp/250/201934/794547/von-zipper-jetpack-goggles-.jpg', 'The Von Zipper Jetpack Goggles bring clean lines and fast living to the snow with a stylish rimless design. Although they might look like they were beamed in from the 23rd Century, their function is all about the here and now', 230, 3, false);
 
 
 

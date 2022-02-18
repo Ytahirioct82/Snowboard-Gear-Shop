@@ -12,7 +12,6 @@ function formatName(name) {
 
 store.get("/", async (req, res) => {
   const { name } = req.query;
-  console.log(name);
   let allProducts = null;
 
   try {
@@ -38,9 +37,8 @@ store.get("/:id", async (req, res) => {
 });
 
 store.delete("/:id", async (req, res) => {
+  const { id } = req.params;
   try {
-    const { id } = req.params;
-
     const deletedProduct = await deleteProduct(id);
     res.status(200).json(deletedProduct);
   } catch (err) {

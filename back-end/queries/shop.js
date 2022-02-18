@@ -13,7 +13,6 @@ const getAll = async () => {
 const getCategory = async (name) => {
   try {
     const allProducts = await db.any("SELECT * FROM snowboard WHERE category=$1", name);
-
     return allProducts;
   } catch (err) {
     return err;
@@ -33,7 +32,6 @@ const getProduct = async (id) => {
 const deleteProduct = async (id) => {
   try {
     const deletedProduct = await db.one("DELETE FROM snowboard WHERE id=$1 RETURNING *", id);
-    console.log(deletedProduct);
     return deletedProduct;
   } catch (err) {
     return err;
