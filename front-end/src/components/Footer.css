@@ -1,0 +1,20 @@
+.Footer {
+  border: solid 1px rgb(24, 49, 82);
+  display: grid;
+  grid-template-columns: 60% 90%;
+  height: 70px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: rgb(255, 213, 58);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.Footer h5 {
+  height: fit-content;
+  width: 30%;
+  margin: auto 210px;
+  color: rgb(24, 49, 82);
+}

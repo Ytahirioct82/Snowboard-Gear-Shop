@@ -1,0 +1,16 @@
+.Nav {
+  border: solid 1px rgb(24, 49, 82);
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  height: 70px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: rgb(255, 213, 58);
+}
+
+.Nav button {
+  height: fit-content;
+  width: 30%;
+  margin: auto 210px;
+  color: rgb(24, 49, 82);
+}
