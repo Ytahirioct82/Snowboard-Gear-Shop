@@ -51,8 +51,21 @@ store.post("/", async (req, res) => {
   product.name = formatName(product.name);
   product.category = formatName(product.category);
   try {
-    const newProduct = await createProduct(product);
-    res.status(200).json(newProduct);
+    if (
+      product.name &&
+      product.category &&
+      product.img &&
+      product.description &&
+      product.price >= 0 &&
+      product.rating >= 0
+    ) {
+      console.log("triggered");
+      const newProduct = await createProduct(product);
+      console.log(newProduct);
+      res.status(200).json(newProduct);
+    } else {
+      res.json({ name: "error" });
+    }
   } catch (err) {
     res.status(404).json(err);
   }
@@ -63,10 +76,16 @@ store.put("/:id", async (req, res) => {
   const product = req.body;
   product.name = formatName(product.name);
   product.category = formatName(product.category);
+  console.log(product);
 
   try {
-    const updatedProduct = await updateProduct(id, product);
-    res.status(200).json(updatedProduct);
+    if (!Object.values(product).includes("")) {
+      const updatedProduct = await updateProduct(id, product);
+      console.log(updatedProduct);
+      res.status(200).json(updatedProduct);
+    } else {
+      res.json({ name: "error" });
+    }
   } catch (err) {
     res.status(404).json(err);
   }

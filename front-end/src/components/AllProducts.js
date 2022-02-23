@@ -11,49 +11,49 @@ function AllProducts() {
   useEffect(() => {
     axios
       .get(`${API}/store`)
-      .then(
-        (response) => {
-          setProducts(response.data);
-          setCategories(response.data);
-        },
-        (error) => console.log("get", error)
-      )
-      .catch((c) => console.warn("catch", c));
+      .then((response) => {
+        console.log(response.data);
+        setProducts(response.data);
+        setCategories(response.data);
+      })
+      .catch((error) => console.warn("catch", error));
   }, []);
 
   let reviews = "";
 
   const display = products.map((product) => {
     if (product.rating === 1) {
-      reviews = `⭐️ ${product.rating} Reviews`;
+      reviews = `⭐️ ${product.rating} Stars`;
     }
     if (product.rating === 2) {
-      reviews = `⭐️⭐️ ${product.rating} Reviews`;
+      reviews = `⭐️⭐️ ${product.rating} Stars`;
     }
     if (product.rating === 3) {
-      reviews = `⭐️⭐️⭐️ ${product.rating} Reviews`;
+      reviews = `⭐️⭐️⭐️ ${product.rating} Stars`;
     }
     if (product.rating === 4) {
-      reviews = `⭐️⭐️⭐️⭐️ ${product.rating} Reviews`;
+      reviews = `⭐️⭐️⭐️⭐️ ${product.rating} Stars`;
     }
     if (product.rating === 5) {
-      reviews = `⭐️⭐️⭐️⭐️⭐️ ${product.rating} Reviews`;
+      reviews = `⭐️⭐️⭐️⭐️⭐️ ${product.rating} Stars`;
     }
 
     return (
       <div className="container" key={product.id}>
-        <Link to={`/index/${product.id}`}>
+        <Link to={`/store/${product.id}`}>
           <img className="fit-picture" src={product.img} alt={product.name}></img>
           <p>{product.name}</p>
           <p>{product.category}</p>
           <p>{reviews}</p>
-          <h4>${product.price}</h4>
+          {product.featured && <p className="red">Featured</p>}
+          {product.featured ? <h4 className="price">${product.price}</h4> : <h4>${product.price}</h4>}
         </Link>
       </div>
     );
   });
   const handleChange = (event) => {
     axios.get(`${API}/store?name=${event.target.value}`).then((response) => {
+      console.log(response.data);
       event.target.value !== "All Products" ? setProducts(response.data) : setProducts(categories);
     });
   };
@@ -63,7 +63,11 @@ function AllProducts() {
   categories.forEach((product) => {
     if (!exist.includes(product.category)) {
       exist.push(product.category);
-      option.push(<option value={product.category}>{product.category}</option>);
+      option.push(
+        <option key={product.id} value={product.category}>
+          {product.category}
+        </option>
+      );
     }
   });
 

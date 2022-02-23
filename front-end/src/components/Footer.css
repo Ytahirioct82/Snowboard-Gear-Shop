@@ -2,9 +2,8 @@
   border: solid 1px rgb(24, 49, 82);
   display: grid;
   grid-template-columns: 60% 90%;
-  height: 70px;
+  height: 55px;
   border-radius: 5px;
-  margin-top: 15px;
   background-color: rgb(255, 213, 58);
   position: fixed;
   left: 0;

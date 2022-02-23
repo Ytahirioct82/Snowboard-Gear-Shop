@@ -1,13 +1,32 @@
 import react from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Nav.css";
 
 function Nav() {
+  const navigate = useNavigate();
   return (
     <div className="Nav">
-      <button>Home</button>
-      <button>Add Product</button>
-      <button>Shopping Cart: 0</button>
+      <button
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Home
+      </button>
+      <button
+        onClick={() => {
+          navigate("/store/new");
+        }}
+      >
+        Add Product
+      </button>
+      <button
+        onClick={() => {
+          navigate("/store/cart");
+        }}
+      >
+        Shopping Cart: 0
+      </button>
     </div>
   );
 }

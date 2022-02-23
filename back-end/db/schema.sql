@@ -11,7 +11,7 @@ CREATE TABLE snowboard (
     name TEXT NOT NULL,
     img TEXT NOT NULL,
     description TEXT NOT NULL,
-    price INT DEFAULT 0,
-    rating INT DEFAULT 0,
+    price INTEGER DEFAULT 0,
+    rating INTEGER DEFAULT 0,
     featured BOOLEAN DEFAULT false
 );

@@ -1,0 +1,28 @@
+.index {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.index .red {
+  width: 200px;
+  margin: auto;
+}
+
+.index p {
+  margin-top: -10px;
+}
+.index img {
+  margin-bottom: 15px;
+}
+
+.modify {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.modify button {
+  color: rgb(255, 213, 58);
+  background-color: rgb(24, 49, 82);
+  margin: 60px auto;
+  width: 200px;
+  border-radius: 5px;
+}

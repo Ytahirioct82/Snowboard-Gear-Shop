@@ -1,0 +1,21 @@
+.New {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.New h4 {
+  color: rgb(24, 49, 82);
+  background-color: rgb(255, 213, 58);
+  width: 200px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+.label {
+  color: rgb(24, 49, 82);
+}
+
+.New button {
+  background-color: rgb(24, 49, 82);
+  color: rgb(255, 213, 58);
+  border-radius: 5px;
+}

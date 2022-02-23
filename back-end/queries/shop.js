@@ -45,6 +45,7 @@ const createProduct = async (product) => {
       "INSERT INTO snowboard (category, name, img, description, price, rating, featured) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *",
       [category, name, img, description, price, rating, featured]
     );
+    console.log(newProduct);
     return newProduct;
   } catch (err) {
     return err;
