@@ -6,7 +6,7 @@ import "./Detailed.css";
 
 const API = process.env.REACT_APP_API_URL;
 
-function Detailed() {
+function Detailed(props) {
   const navigate = useNavigate();
   const { id } = useParams();
   const [product, setProduct] = useState({});
@@ -30,7 +30,7 @@ function Detailed() {
   };
 
   const HandleAdd = () => {
-    return <Cart obj={product} />;
+    props.func(product);
   };
 
   let reviews = "";

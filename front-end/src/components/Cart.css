@@ -1,0 +1,48 @@
+.main {
+  border: solid 1px black;
+  width: 40%;
+  margin: auto;
+  height: fit-content;
+  text-align: center;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: fit-content;
+  margin: auto;
+}
+
+.cart p {
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 40px;
+  color: rgb(24, 49, 82);
+  width: fit-content;
+}
+
+.main h2 {
+  border: solid 1px grey;
+  width: 60%;
+  margin: 30px auto;
+  background-color: rgb(255, 213, 58);
+  border-radius: 5px;
+  color: rgb(24, 49, 82);
+}
+
+.cart button {
+  width: 20%;
+  height: fit-content;
+  margin-top: 17px;
+  margin-left: 60px;
+  background-color: orange;
+}
+.main h4 {
+  color: rgb(24, 49, 82);
+}
+.main span {
+  color: red;
+  font-weight: lighter;
+}

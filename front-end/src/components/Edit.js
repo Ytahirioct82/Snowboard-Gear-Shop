@@ -34,7 +34,7 @@ function Edit() {
       if (response.data.id) {
         setProduct(response.data);
         navigate("/");
-      } else alert("must include all input");
+      } else alert("must include all inputs");
     });
   };
 

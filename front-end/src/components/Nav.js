@@ -2,7 +2,7 @@ import react from "react";
 import { useNavigate } from "react-router-dom";
 import "./Nav.css";
 
-function Nav() {
+function Nav(props) {
   const navigate = useNavigate();
   return (
     <div className="Nav">
@@ -25,7 +25,7 @@ function Nav() {
           navigate("/store/cart");
         }}
       >
-        Shopping Cart: 0
+        Shopping Cart: {props.count}
       </button>
     </div>
   );
