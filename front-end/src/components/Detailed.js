@@ -31,6 +31,7 @@ function Detailed(props) {
 
   const HandleAdd = () => {
     props.func(product);
+    navigate(`/`);
   };
 
   let reviews = "";
